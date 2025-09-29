@@ -1,0 +1,50 @@
+.pio/
+.idea/
+.vscode/
+test/
+# CLion IDE
+.idea/
+cmake-build-*/
+CMakeLists.txt.user
+
+# 编译输出文件
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+*.bin
+*.hex
+*.elf
+
+# 构建目录
+build/
+Debug/
+Release/
+
+# 临时文件
+*.tmp
+*.log
+*.bak
+*~
+
+# 环境变量文件（包含敏感信息）
+.env
+.env.local
+.env.development
+.env.production
+
+# 配置文件（包含敏感信息）
+config.json
+secrets.json
+credentials.json
+compile_commands.json
+
+# ESP32 相关
+*.partitions.csv
+*.bin
+*.elf
+
+# Git
+.DS_Store
+Thumbs.db
