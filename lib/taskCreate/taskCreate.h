@@ -39,7 +39,7 @@
 #define DELAY_20MS   pdMS_TO_TICKS(20)
 
 /* 是否使用立创开发板 */
-#define isJLC
+// #define isJLC
 /* 是否启用OLED屏幕 */
 #define useOLED
 

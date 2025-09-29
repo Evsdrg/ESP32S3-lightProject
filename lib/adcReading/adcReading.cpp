@@ -42,9 +42,14 @@ void getVoltage() {
     int batteryAdc = analogRead(adcBatteryPin);
     battery_mV = (batteryAdc * 6600L) >> 12; // ≈ (adc * 6600) / 4096
 
+
     // --- 太阳能电压 (分压比 33/133) ---
     int sunAdc = analogRead(adcSunPin);
+#ifdef isJLC
+    solar_mV = (sunAdc * 6600L) >> 12; // ≈ (adc * 6600) / 4096
+#else
     solar_mV = (sunAdc * 13300L) >> 12; // ≈ (adc * 13300) / 4096
+#endif
 
     // --- 计算电池剩余电量百分比 ---
     battery_percentage = calculateBatteryPercentage(battery_mV);

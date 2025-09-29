@@ -28,7 +28,7 @@
 #include "esp_task_wdt.h"
 
 
-#define MQTT_BROKER_ADDR "192.168.1.111"    // 服务器地址
+#define MQTT_BROKER_ADDR "192.168.43.20"    // 服务器地址
 #define MQTT_BROKER_PORT 1883               // 服务端口号
 #define MQTT_USERNAME "123"                 // 账号（开发环境非必须）
 #define MQTT_PASSWORD "456"                 // 密码（开发环境非必须）
@@ -37,7 +37,7 @@
 #define MQTT_CONNECT_TIMEOUT 5000           // MQTT连接超时时间(毫秒)
 #define MQTT_MAX_RETRY_COUNT 3              // 最大重试次数
 #define DEVICE_PREFIX "LIGHT_"                  // 设备ID前缀
-#define DEVICE_NUMBER "4"                       // 设备编号（根据实际设备修改）
+#define DEVICE_NUMBER "1"                       // 设备编号（根据实际设备修改）
 #define DEVICE_ID DEVICE_PREFIX DEVICE_NUMBER   // 设备ID（唯一标识符）
 #define MQTT_TOPIC_DATA "device/" DEVICE_ID "/data"             // 数据上报主题
 #define MQTT_TOPIC_HEARTBEAT "device/" DEVICE_ID "/heartbeat"   // 心跳包主题

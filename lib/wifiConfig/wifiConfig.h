@@ -17,8 +17,8 @@
 #include <Arduino.h>
 #include <WiFi.h>
 
-#define WIFI_SSID "xxxx"       // WiFi名称
-#define WIFI_PASSWORD "xxxx"   // WiFi密码
+#define WIFI_SSID ""       // WiFi名称
+#define WIFI_PASSWORD ""   // WiFi密码
 
 
 void wifiConfig();
